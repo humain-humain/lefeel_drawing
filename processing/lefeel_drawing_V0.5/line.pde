@@ -25,15 +25,15 @@ class Line {
       xc2 = mid_x - (line_lenght/2)/(mid_line_height/2) * (touch_Y-mid_y);
       yc2 = mid_y - (line_lenght/2)/(mid_line_height/2) * (mid_x-touch_X);
     
-      //line(xc1, yc1, xc2, yc2);
-      //line(touch_X, touch_Y, previous_touchX, previous_touchY);
+      line(xc1, yc1, xc2, yc2);
+      line(touch_X, touch_Y, previous_touchX, previous_touchY);
       
-      beginShape();
+      /*beginShape();
         vertex(last_xc1, last_yc1);
         vertex(xc1, yc1);
         vertex(xc2, yc2);
         vertex(last_xc2, last_yc2);
-      endShape(CLOSE);
+      endShape(CLOSE);*/
   
       last_xc1 = xc1;
       last_xc2 = xc2;
